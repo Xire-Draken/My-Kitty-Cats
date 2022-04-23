@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+
+*{
+    background-color: beige;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 3em;
+    background-color: rgba(12, 204, 204, .5)
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: 'Square Peg', cursive;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: lightgreen;
+    padding: .1em .3em;
+}
+
+.nav-container ul {
+    display: flex;
+    list-style: none;
+    background-color: lightgreen;
+    padding: .1em 3em;
+    border: 2px solid black;
+}
+
+.nav-container ul li {
+    background-color: lightgreen;
+    padding: 1.33em 1em;
+}
+
+.nav-container ul li a {
+    background-color: lightgreen;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.body-container {
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.body-container h2 {
+    max-width: 100%;
+    font-size: 2rem;
+    border: 2px solid black;
+    background-color: rgb(236, 255, 131);
+    margin: 1.4rem;
+}
+
+.banner-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.banner-container img {
+    max-width: 30rem;
+}
+
+.banner-para p {
+    background-color: lightgreen;
+    padding: 1rem;
+}
+
+.banner-para p a {
+    background-color: lightgreen;
+}
+
+@media screen and (max-width: 1060px) {
+    .nav-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-container h1{
+        border-bottom: none;
+    }
+    .nav-container ul {
+        padding: 0;
+        border-top: none;
+    }
+    .nav-container ul li {
+        padding: .46em
+    }
+
+    .banner-container {
+        grid-template-columns: 1fr;
+    }
+
+
+
+}
